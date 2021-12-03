@@ -1,4 +1,4 @@
-## PCI Interview
+﻿## PCI Interview
 This is the coding interview for the PCI platform. It covers a wide range of technologies all used currently in the system, so will be quite important to show a certain level of fluency with them. I promise it will be fun, or at least less painful than most interviews :)... So, without further ado, let's get into it! 
 
 *Estimated time to complete: <2 hours.*
@@ -121,18 +121,18 @@ OR
 ```typescript
 await SomeModel
 .aggregate([  
-	{ $lookup:  
-			{  
-				from: "some_collection",  
-				localField: "somefield",  
-				foreignField: "somefield2",  
-				as: "somekey",  
-			}  
-	},  
-	{  
-		$match: {  
-				somefield: { $eq: 'somevalue' }  
+    { $lookup:  
+        {  
+            from: "some_collection",  
+			localField: "somefield",  
+			foreignField: "somefield2",  
+			as: "somekey",  
 		}  
+    },  
+    {  
+	    $match: {  
+	        somefield: { $eq: 'somevalue' }  
+	    }  
 	}
 ])
 ```
@@ -175,3 +175,4 @@ A personal thank you for participating in this interview, hope it was any intere
 Please have a nice day/night, 
 
 > Eduardo Fernandes
+
