@@ -43,6 +43,7 @@ Now that you had this short introduction, is time to start your screen recorder 
  - Some challenges will provide you with files. They can be located in this repository in the corresponding folder.
  - Even though explanations are as clear as I could get them. If you happen to have questions at any point, trust your instincts, go with what you feel is right, even if it feels like I must provide you that information or it will be impossible to continue. I will value this positively. It doesn't matter if the result is not what I might expect. Make this challenge yours.
  - If you see yourself taking longer in one task than the estimated time don't worry, these are just estimates, some people will take longer at some challenges but be flying at others. Now if you are taking too long *(about twice)* you are advised to skip it.
+ - This whole interview should be done in one go, although you can pause the screen recording and take small breaks here and there, not a big deal. 
 
 ## Challenge 1
 This one will get you warmed up and hopefully you'll run through it!
