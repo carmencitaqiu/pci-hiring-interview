@@ -121,18 +121,18 @@ OR
 ```typescript
 await SomeModel
 .aggregate([  
-    { $lookup:  
-        {  
-            from: "some_collection",  
-			localField: "somefield",  
-			foreignField: "somefield2",  
-			as: "somekey",  
+	{ $lookup:  
+			{  
+				from: "some_collection",  
+				localField: "somefield",  
+				foreignField: "somefield2",  
+				as: "somekey",  
+			}  
+	},  
+	{  
+		$match: {  
+				somefield: { $eq: 'somevalue' }  
 		}  
-    },  
-    {  
-	    $match: {  
-	        somefield: { $eq: 'somevalue' }  
-	    }  
 	}
 ])
 ```
