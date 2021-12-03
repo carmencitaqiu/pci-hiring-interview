@@ -1,0 +1,52 @@
+<!--
+    TODO {4}: Create a shape component that will replace
+    the following div. It should receive the shape gotten
+    from the api.
+-->
+<!--
+    TODO {5}: The shape component should display a shape
+    of the given type (expect some css trickery for the star xD),
+    with the given color and size in px.
+-->
+<div class="shape">
+    Here should go a shape
+</div> 
+
+<!--
+    TODO {6}: Create a button that when clicked generates a random
+    positive integer and navigates to it (basically change the id
+    url parameter randomly). You should create the click handler fn too.
+-->
+<!--
+    TODO {7}: When this id is changed, you should instantaneously execute 
+    todos {2} and {3}. Basically get new id from the route params (don't 
+    change it directly), then get the shape corresponding to this id 
+    from the api service and finally display it. Plus for using 
+    observables and async pipes in this whole process.
+-->
+<button>Fetch new shape</button>
+<br />
+
+<!--
+    TODO {8}: Create a directive and use it in the following elements
+    to change their font color based on the shape color
+-->
+<span>This is the current color!</span>
+<ul>
+    <li>This</li>
+    <li>is</li>
+    <li>the</li>
+    <li>current</li>
+    <li>color</li>
+</ul>
+<textarea>This is the current color!</textarea>
+<br />
+
+<!--
+    TODO {9}: This evil button should make the shape go to a 
+    black color without changing the color of the previous 
+    elements (span, ul, li, textarea). This change should stay
+    until a new shape is fetched using button above or changing
+    id url param manually
+-->
+<button>Eliminate shape color muahaha</button>
