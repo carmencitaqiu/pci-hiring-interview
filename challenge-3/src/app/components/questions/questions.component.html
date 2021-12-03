@@ -1,7 +1,7 @@
 <!--
     TODO {4}: Create a shape component that will replace
     the following div. It should receive the shape gotten
-    from the api.
+    from the api as an Input.
 -->
 <!--
     TODO {5}: The shape component should display a shape
@@ -14,12 +14,12 @@
 
 <!--
     TODO {6}: Create a button that when clicked generates a random
-    positive integer and navigates to it (basically change the id
+    positive integer and navigates to it (basically change the /:id
     url parameter randomly). You should create the click handler fn too.
 -->
 <!--
     TODO {7}: When this id is changed, you should instantaneously execute 
-    todos {2} and {3}. Basically get new id from the route params (don't 
+    {2} and {3}. Basically get new id from the route params (don't 
     change it directly), then get the shape corresponding to this id 
     from the api service and finally display it. Plus for using 
     observables and async pipes in this whole process.
@@ -47,6 +47,6 @@
     black color without changing the color of the previous 
     elements (span, ul, li, textarea). This change should stay
     until a new shape is fetched using button above or changing
-    id url param manually
+    id url param manually, or refreshing the page of course
 -->
 <button>Eliminate shape color muahaha</button>

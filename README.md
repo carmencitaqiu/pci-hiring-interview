@@ -1,7 +1,7 @@
 ﻿## PCI Interview
 This is the coding interview for the PCI platform. It covers a wide range of technologies all used currently in the system, so will be quite important to show a certain level of fluency with them. I promise it will be fun, or at least less painful than most interviews :)... So, without further ado, let's get into it! 
 
-*Estimated time to complete: <2 hours.*
+*Estimated time to complete: 2 hours.*
 ## Table of contents
 - [PCI Interview](#pci-interview)
 - [Table of contents](#table-of-contents)
@@ -35,13 +35,14 @@ Feel free to provide comments on your thought process at any given point. Includ
 ### Video
 In addition to this, a recording of your screen (no audio) while reading the prompts and actually doing the challenge is expected. Don't worry if you have to google things while doing the challenge, it's actually expected to happen! Your approach to it is what matters.
 
-> *Disclaimer: I, of course, can respect your privacy regarding this, so you have the option of not submitting a video recording. Is up to you.*
+> *Acknowledment: I, of course, can respect your privacy regarding this, so you have the option of not submitting a video recording. Is up to you.*
 
 Now that you had this short introduction, is time to start your screen recorder and get going with the challenge.
 ## Some info
 
  - Some challenges will provide you with files. They can be located in this repository in the corresponding folder.
  - Even though explanations are as clear as I could get them. If you happen to have questions at any point, trust your instincts, go with what you feel is right, even if it feels like I must provide you that information or it will be impossible to continue. I will value this positively. It doesn't matter if the result is not what I might expect. Make this challenge yours.
+ - If you see yourself taking longer in one task than the estimated time don't worry, these are just estimates, some people will take longer at some challenges but be flying at others. Now if you are taking too long *(about twice)* you are advised to skip it.
 
 ## Challenge 1
 This one will get you warmed up and hopefully you'll run through it!
@@ -55,7 +56,7 @@ Your goal is to print the names of the top 5 restaurants together with their tot
 
 ### Notes
  - Use the property `rating` from the ratings.csv file when calculating the total rating.  
- - Remaining properties from both files can be ignored.
+ - There will be unused properties from both files.
  - You can use npm libraries, typescript, node, browser... Is up to you.
 
 ### Evaluation criteria
@@ -68,7 +69,7 @@ Your goal is to print the names of the top 5 restaurants together with their tot
 ## Challenge 2
 Hopefully the first challenge was easy and somewhat fun! Now you'll get your hands dirty with this following challenge. Not too long to code, but requires lots of thinking... Good luck.
 
-*Estimated time to complete: 1hr.*
+*Estimated time to complete: 45min.*
 ### Statement
 We are given a MongoDB database with 2 collections, that have the following document structure *(they are also provided as typescript files in this repo)*:
 
@@ -123,14 +124,16 @@ interface Student {
 
 A very common query is to display to the professors and students their schedule, basically display a calendar like google calendar with the slot taken by each lecture for each subject of any given month. 
 
-Another common query is for the administrative staff to get all students enrolled in a certain subject, and also all the professors teaching it.
+Another common query is for the administrative staff to know which students are enrolled in a certain subject, and also all the professors teaching it.
+
+Assume a real scenario, with +20k students, hundreds of professors, thousands of subjects, and that you have to answer the queries in miliseconds.
 
 ### Goal
 
- - Find any problems with current model and propose an alternative solution having the main queries in mind. You can propose additional collections. You can provide typescript interfaces or mongoose models, is unimportant.
+ - Find any problems with current model and propose an alternative solution having the main queries in mind. You can propose additional collections. You can propose indexes. You can provide typescript interfaces or mongoose models, is unimportant.
  - Give statements for executing both queries, use mongoose. You can use aggregations. You can create a JS file for each query, name is unimportant. 
 
-Example:
+Examples of queries:
 
 *query1.js*
 ```typescript
@@ -169,7 +172,7 @@ await SomeModel
 ## Challenge 3
 I hope last challenge was not too challenging *(no pun intended :D)* and hope you are ready for this easy one, that only aims to test some of your angular knowledge.
 
-*Estimated time to complete: 30min.*
+*Estimated time to complete: 45min.*
 ### Statement
 This is an Angular knowledge test, you should provide solutions to the tasks. They are stated in comments throughout the project. You'll know how to find them. They are a total of 10. Do them in order.
 
