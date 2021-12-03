@@ -3,7 +3,28 @@ This is the coding interview for the PCI platform. It covers a wide range of tec
 
 *Estimated time to complete: <2 hours.*
 ## Table of contents
-
+- [PCI Interview](#pci-interview)
+- [Table of contents](#table-of-contents)
+- [Deliverable](#deliverable)
+  - [Video](#video)
+- [Some info](#some-info)
+- [Challenge 1](#challenge-1)
+  - [Statement](#statement)
+  - [Goal](#goal)
+  - [Notes](#notes)
+  - [Evaluation criteria](#evaluation-criteria)
+- [Challenge 2](#challenge-2)
+  - [Statement](#statement-1)
+  - [Goal](#goal-1)
+  - [Notes](#notes-1)
+  - [Evaluation criteria](#evaluation-criteria-1)
+- [Challenge 3](#challenge-3)
+  - [Statement](#statement-2)
+  - [Goal](#goal-2)
+  - [Notes](#notes-2)
+  - [Evaluation criteria](#evaluation-criteria-2)
+- [Outro](#outro)
+  
 ## Deliverable
 You'll have to fork this repo and work on it, then provide me with access to the resulting repository, anything regarding the solution for a challenge should be inside their corresponding folders, if you want to deliver some explanations for example you can do it in comments or in a txt. It doesn't matter how you organize each folder inside.
 
@@ -55,24 +76,24 @@ We are given a MongoDB database with 2 collections, that have the following docu
 
 ```typescript
 interface Professor {
-	id: string;
-	name: string;
-	faculty: string;
-	phone: string;
-	email: string;
-	subjects: {
-		[name: string]: {
-			professors: Professor[];
-			students: Student[];
-			lectures: [
-				{
-					date: Date;
-					duration: number;
-					classroom: string;
-				}
-			];
-		};
-	};
+    id: string;
+    name: string;
+    faculty: string;
+    phone: string;
+    email: string;
+    subjects: {
+        [name: string]: {
+            professors: Professor[];
+            students: Student[];
+            lectures: [
+                {
+                    date: Date;
+                    duration: number;
+                    classroom: string;
+                }
+            ];
+        };
+    };
 }
 ```
     
@@ -80,23 +101,23 @@ interface Professor {
 
 ```typescript
 interface Student {
-	id: string;
-	name: string;
-	degree: string;
-	email: string;
-	subjects: {
-		[name: string]: {
-			professors: Professor[];
-			students: Student[];
-			lectures: [
-				{
-					date: Date;
-					duration: number;
-					classroom: string;
-				}
-			];
-		};
-	};
+    id: string;
+    name: string;
+    degree: string;
+    email: string;
+    subjects: {
+        [name: string]: {
+            professors: Professor[];
+            students: Student[];
+            lectures: [
+                {
+                    date: Date;
+                    duration: number;
+                    classroom: string;
+                }
+            ];
+        };
+    };
 }
 ```
 
@@ -124,16 +145,16 @@ await SomeModel
     { $lookup:  
         {  
             from: "some_collection",  
-			localField: "somefield",  
-			foreignField: "somefield2",  
-			as: "somekey",  
-		}  
+            localField: "somefield",  
+            foreignField: "somefield2",  
+            as: "somekey",  
+        }  
     },  
     {  
-	    $match: {  
-	        somefield: { $eq: 'somevalue' }  
-	    }  
-	}
+        $match: {  
+            somefield: { $eq: 'somevalue' }  
+        }  
+    }
 ])
 ```
 ### Notes
