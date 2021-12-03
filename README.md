@@ -53,7 +53,16 @@ This one will get you warmed up and hopefully you'll run through it!
 You are given two csv files, one with restaurants and the other with ratings. Restaurants and reviews can be linked with the key `placeID` .
 
 ### Goal
-Your goal is to print the names of the top 5 restaurants together with their total ratings.
+Your goal is to print the names of the top 5 restaurants (by rating) together with their total ratings.
+
+*Example output:*
+```js
+'restaurant-name-1': 2.00
+'restaurant-name-2': 1.89
+'restaurant-name-3': 1.80
+'restaurant-name-4': 1.65
+'restaurant-name-5': 1.64
+```
 
 ### Notes
  - Use the property `rating` from the ratings.csv file when calculating the total rating.  
